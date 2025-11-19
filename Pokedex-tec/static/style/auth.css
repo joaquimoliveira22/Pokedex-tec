@@ -1,14 +1,14 @@
 /* auth.css - estilos para login e cadastro */
 
 :root{
-  --bg-top: #ffcd05;
-  --bg-bottom: #ff4e00;
-  --card-bg: #ffffff;
+  --bg-top: #ffffff;
+  --bg-bottom: #535353;
+  --card-bg: #363636a9;
   --accent: #d80000;
   --accent-dark: #a80000;
-  --muted: #666;
+  --muted: #f0e7e7;
   --radius: 14px;
-  --shadow: 0 8px 28px rgba(0,0,0,0.18);
+  --shadow: 0 8px 28px rgb(0, 0, 0);
   --font: "Rubik", "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
@@ -49,7 +49,7 @@ body{
   font-size:24px;
   margin:0 0 18px;
   font-weight:700;
-  color:#111;
+  color:#ffffff;
 }
 
 /* Inputs */
