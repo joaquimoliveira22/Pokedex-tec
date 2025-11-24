@@ -1,4 +1,8 @@
-/Pokedex-tec/model/__pycache__
-/Pokedex-tec/model/__pycache__
-/Pokedex-tec/model/__pycache__
-/Pokedex-tec/venv
+*.db
+*.pyc
+Pokedextec/venv/Include/site/python3.12/greenlet/greenlet.h
+/Pokedextec/venv
+/Pokedextec
+/Pokedextec/venv
+/Pokedextec/venv
+/Pokedextec/venv

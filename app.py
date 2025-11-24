@@ -4,9 +4,9 @@ import jwt
 import datetime
 import secrets
 from functools import wraps
-from Pokedextec.model.apipokemon import buscar_pokemon
-from Pokedextec.model.apistyles import buscar_pokemons_por_tipo
-from Pokedextec.model.apigemini import gerar_descricao_pokemon
+from model.apipokemon import buscar_pokemon
+from model.apistyles import buscar_pokemons_por_tipo
+from model.apigemini import gerar_descricao_pokemon
 
 app = Flask(__name__)
 app.secret_key = "abacaxi123"
