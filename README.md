@@ -80,6 +80,11 @@ Tutorial para rodar a Pokedex.
 5. Digite "ls" novamente e verifique se o arquivo "app.py" aparece pra você.
 6. Se aparecer, ainda no terminal, digite "pip install -r requirements.txt" e aperte enter, esse comando baixará as bibliotecas necessarias para rodar o codigo.
 7. Por fim, ainda no terminal, digite "python app.py" e aperte enter, o site estará rodando localmente e no proprio terminal aparecerá algo como http://127.0.0.1:5000/ e ao segurar o ctrl esquerdo e    clicar com o botao direito sobre esse IP, você será redirecionado para o site no seu navegador.
+_________________________________________________
+Link do site da Pokedex...
+
+https://pokedex-tec-pcor.onrender.com
+   
 
 
 OBS* CASO UM DESSES PASSOS NÃO FUNCIONEM, POR FAVOR CONTATAR O DESENVOLVEDOR PARA TIRA DUVIDAS.
