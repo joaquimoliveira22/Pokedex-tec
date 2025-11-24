@@ -61,14 +61,14 @@ _________________________________________________
 
 4. Fluxo de Integração:
 
-1. Usuário acessa o front-end
-2. Realiza login  
-3. O front-end envia os dados ao back-end Flask
-4. SQL Alchemy valida o usuário  
-5. Após logado, o usuário pode buscar Pokémons
-6. Flask faz requisição para API externa
-7. Retorna dados para o front-end
-8. Interface exibe nome, imagem e uma descrição gerada pela API do Gemini
+  1. Usuário acessa o front-end
+  2. Realiza login  
+  3. O front-end envia os dados ao back-end Flask
+  4. SQL Alchemy valida o usuário  
+  5. Após logado, o usuário pode buscar Pokémons
+  6. Flask faz requisição para API externa
+  7. Retorna dados para o front-end
+  8. Interface exibe nome, imagem e uma descrição gerada pela API do Gemini
 _________________________________________________
 
 Tutorial para rodar a Pokedex.
