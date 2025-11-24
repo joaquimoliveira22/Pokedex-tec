@@ -65,9 +65,24 @@ _________________________________________________
 2. Realiza login  
 3. O front-end envia os dados ao back-end Flask
 4. SQL Alchemy valida o usuário  
-5. Após logado, o usuário pode buscar Pokémons  
+5. Após logado, o usuário pode buscar Pokémons
 6. Flask faz requisição para API externa
 7. Retorna dados para o front-end
-9. Interface exibe nome, imagem e uma descrição gerada pela API do Gemini
+8. Interface exibe nome, imagem e uma descrição gerada pela API do Gemini
+_________________________________________________
+
+Tutorial para rodar a Pokedex.
+
+1. Baixe o arquivo zip na sua maquina e extraia.
+2. Usando o visual studio code (vscode) selecione a pasta extraída do .zip.
+3. Dentro do vscode, vá ate o terminal e dê digite "ls" e aperte enter, verifique se a pasta "Pokedex-tec" aparece para você.
+4. Se aparecer, digite "cd pokedex-tec" e aperte enter.
+5. Digite "ls" novamente e verifique se o arquivo "app.py" aparece pra você.
+6. Se aparecer, ainda no terminal, digite "pip install -r requirements.txt" e aperte enter, esse comando baixará as bibliotecas necessarias para rodar o codigo.
+7. Por fim, ainda no terminal, digite "python app.py" e aperte enter, o site estará rodando localmente e no proprio terminal aparecerá algo como http://127.0.0.1:5000/ e ao segurar o ctrl esquerdo e    clicar com o botao direito sobre esse IP, você será redirecionado para o site no seu navegador.
+
+
+OBS* CASO UM DESSES PASSOS NÃO FUNCIONEM, POR FAVOR CONTATAR O DESENVOLVEDOR PARA TIRA DUVIDAS.
+
 
 
