@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Pokedex</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='pokedex.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/auth.css') }}">
+</head>
+<body>
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1 class="title">Criar Conta</h1>
+
+        <input type="text" id="cadNome" placeholder="Seu nome" required>
+        <input type="email" id="cadEmail" placeholder="E-mail" required>
+        <input type="password" id="cadSenha" placeholder="Senha" required>
+
+        <button onclick="cadastrar()" class="auth-btn">Cadastrar</button>
+
+        <p class="link-area">
+            Já possui conta? <a href="{{ url_for('login') }}">Entrar</a>
+        </p>
+
+        <p id="erro" class="erro" style="display:none;"></p>
+    </div>
+</div>
+
+
+<script>
+async function cadastrar() {
+    const nome = document.getElementById("cadNome").value;
+    const email = document.getElementById("cadEmail").value;
+    const senha = document.getElementById("cadSenha").value;
+    const erroBox = document.getElementById("erro");
+
+    const resposta = await fetch("/api/cadastro", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nome, email, senha })
+    });
+
+    const data = await resposta.json();
+
+    if (resposta.status === 201) {
+        window.location.href = data.redirect; 
+    } else {
+        erroBox.style.display = "block";
+        erroBox.textContent = data.erro;
+    }
+}
+</script>
+
+</body>
+</html>
