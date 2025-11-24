@@ -6,6 +6,7 @@ import secrets
 from functools import wraps
 from model.apipokemon import buscar_pokemon
 from model.apistyles import buscar_pokemons_por_tipo
+from model.apigemini import gerar_descricao_pokemon
 
 app = Flask(__name__)
 app.secret_key = "abacaxi123"
@@ -166,14 +167,28 @@ def buscar():
         resultado = buscar_pokemon(termo)
         if resultado is None:
             return render_template("index.html", resultado={"erro": "Pokémon não encontrado."})
+            
+            
+        try:
+            pokemon_name = resultado.get('nome') 
+            pokemon_types = resultado.get('tipos', []) 
+            
+            gemini_desc = gerar_descricao_pokemon(pokemon_name, pokemon_types)
+            
+            resultado['gemini_description'] = gemini_desc
+            
+        except Exception as e:
+            print(f"Erro na integração Gemini: {e}")
+            resultado['gemini_description'] = "Erro ao gerar descrição."
+
         return render_template("index.html", resultado=resultado)
 
-    else:
+    else: 
         lista = buscar_pokemons_por_tipo(termo)
         if lista is None:
             return render_template("index.html", resultado={"erro": "Tipo não encontrado ou erro na API."})
         return render_template("index.html", resultado={"lista": lista})
-
+    
 # CRIA O BANCO SE NÃO EXISTIR
 with app.app_context():
     db.create_all()
