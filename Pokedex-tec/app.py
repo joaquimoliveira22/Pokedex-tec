@@ -75,7 +75,7 @@ def login():
         user = Usuario.query.filter_by(email=email, senha=senha).first()
 
         if not user:
-            return render_template("login.html", erro="Token invalido ou credenciais erradas")
+            return render_template("login.html", erro="Token invalido ou credenciais não existentes")
 
         # Verifica se usuário possui token próprio
         if not user.token_acesso:
