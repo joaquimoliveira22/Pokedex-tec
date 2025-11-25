@@ -88,9 +88,13 @@ Link do site da Pokedex...
 
 [Pokedex](https://pokedex-tec-pcor.onrender.com)
    
+**Perfil dos Desenvolvedores:**
 
+- [Bianca Torres](https://github.com/biiancatorres)
 
-
+- [Carlos Hen](https://github.com/carlohen)
+  
+- [Joaquim Oliveira](https://github.com/joaquimoliveira22)
 
 
 
