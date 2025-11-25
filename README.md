@@ -84,6 +84,42 @@ _________________________________________________
 OBS* CASO UM DESSES PASSOS NÃO FUNCIONEM, POR FAVOR CONTATAR O DESENVOLVEDOR PARA TIRA DUVIDAS.
 _________________________________________________
 
+**TIPOS DE POKEMON**
+
+> - **fogo**
+
+> - **agua** | **agua2**
+
+> - **eletrico**
+
+> - **voador**
+
+> - **lutador**
+
+> - **psíquico**
+
+> - **inseto**
+
+> - **venenoso**
+
+> - **pedra**
+
+> - **terra**
+
+> - **gelo**
+
+> - **fantasma**
+
+> - **dragao**
+
+> - **sombrio**
+
+> - **aço**
+
+> - **normal**
+
+_________________________________________________
+
 Link do site da Pokedex...
 
 [Pokedex](https://pokedex-tec-pcor.onrender.com)
