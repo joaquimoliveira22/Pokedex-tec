@@ -124,15 +124,15 @@ _________________________________________________
 
 #### ***Link do site da Pokedex...***
 
-- ***[Pokedex](https://pokedex-tec-pcor.onrender.com)***
+> - ***[Pokedex](https://pokedex-tec-pcor.onrender.com)***
    
 #### ***Perfil dos Desenvolvedores:***
 
-- ***[Bianca Torres](https://github.com/biiancatorres)***
+> - ***[Bianca Torres](https://github.com/biiancatorres)***
 
-- ***[Carlos Hen](https://github.com/carlohen)***
+> - ***[Carlos Hen](https://github.com/carlohen)***
   
-- ***[Joaquim Oliveira](https://github.com/joaquimoliveira22)***
+> - ***[Joaquim Oliveira](https://github.com/joaquimoliveira22)***
 
 
 
